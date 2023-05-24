@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários HTML</title>
+</head>
+<body>
+    <main>
+        <h1>Formulário</h1>
+        <hr>
+
+        <form action="" method="get">
+            <div>
+                <label for="text">Nome:</label><!--Pra quem é essa label? (identificação)-->
+                <input type="text" id="texto" name="nome">
+
+                <div>
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha">
+                </div>
+
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div>
+                    <label for="number">Número:</label>
+                    <input type="number" name="numero">
+                </div>
+
+                <div>
+                    <label for="data">Data de Nascimento:</label>
+                    <input type="date" id="data" name="data">
+                </div> 
+
+                <div>
+                    <label for="hora">Horário:</label>
+                    <input type="time" id="hora" name="hora">
+                </div> 
+
+                <div>
+                    <label for="arquivo">Arquivo:</label>
+                    <input type="file" id="arquivo" name="arquivo">
+                </div> 
+
+                <div>
+                    <label for="link">Link:</label>
+                    <input type="url" id="link" name="link">
+                </div> 
+
+                <div>
+                    <label for="cor">Cor:</label>
+                    <input type="color" id="cor" name="cor">
+                </div> 
+
+                <div>
+                    <label for="range">Range:</label>
+                    <input type="range" id="range" name="range"> <!--Pode definir tamanho máx e mín-->
+                </div> 
+
+                <div>
+                    <label for="checkbox"">Checkbox:</label>
+                    <input type="checkbox" id="checkbox" name="checkbox"><!--atributo checked já trás opção marcada-->
+                </div> 
+
+                <div>
+                    <label for="radio"">Radio:</label>
+                    <input type="radio" id="radio" name="radio">
+                </div>
+
+                <div><!--Botão para limpar valores-->
+                    <input type="reset" id="reset" name="reset" value="Nome Botão">
+                </div>
+
+                <!--Caixa de texto-->
+                <textarea name="bio" id="" cols="30" rows="10"></textarea>
+
+                <div>
+                    <select name="" id="">
+                        <!--Cada option possui um valor e um nome para o valor
+                        atributos disabled selected são para setar um valor padrão e fazer com que o usuário escolha uma opção de indicação-->
+
+                        <option value="" disabled selected>Selecione...</option>
+                        <option value="receita">Receita</option>
+                        <option value="despesa">Despesa</option>
+                        <option value="transferencia">Transferência</option>
+                    </select>
+                </div>
+                
+                <div><!--Botão para enviar valores-->
+                    <input type="submit" id="submit" name="submit" value="Enviar">
+                </div>
+
+
+                <!--placeholder = aparece indicação de preenchimento na caixa
+                value = texto preenchido na caixa
+                labels não são usadas para botões-->
+            </div>
+        </form>
+    </main>
+</body>
+</html>
